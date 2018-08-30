@@ -42,15 +42,12 @@ def get_personify_token(auth_token, stonecode):
     return token
 
 if __name__ == '__main__':
+    # TODO: check why it is not loading .env
     load_dotenv()
     user_email = os.getenv('USEREMAIL')
     user_password = os.getenv('USERPASSWORD')
     api_url = 'https://portalapi.stone.com.br'
     stonecode = sys.argv[1] if len(sys.argv) > 1 else os.getenv('STONECODE')
-
-    print(user_email)
-    print(user_password)
-    print(stonecode)
 
     auth_token = get_auth_token(user_email, user_password)
     personify_token = get_personify_token(auth_token, stonecode)
