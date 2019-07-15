@@ -19,3 +19,5 @@ Both `{stonecode}` and `{environ}` are optional.
 `{environ}` options are `prd` or `stg` (or whatever you declare on your env vars. Example: if you define a `API_DEV_URL` and a `API_DEV_PASSWORD`, you would de able to pass `dev` as environ).
 
 The api token is now copied to your clipboard, just paste it somewhere safe!
+
+Originally made by @gcrsaldanha <3
